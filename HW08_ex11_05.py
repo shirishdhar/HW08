@@ -25,7 +25,9 @@ def invert_dict_old(d):
 
 
 def invert_dict_new(d):
-    pass
+    inverse=dict()
+    a= {d[key]:[key] for key in d}
+    print a
 
 
 def print_hist_newest(d):
@@ -42,9 +44,11 @@ def print_hist_newest(d):
 ################### INSERT COMPLETED CODE FROM 11_02 ABOVE: ##################
 ##############################################################################
 def main():  # DO NOT CHANGE BELOW
-    pledge_histogram = histogram_new(get_pledge_list())
-    pledge_invert = invert_dict_new(pledge_histogram)
-    print_hist_newest(pledge_invert)
+    #print invert_dict_old({'a':1, 'b':1, 'c':2})
+    #pledge_histogram = histogram_new(get_pledge_list())
+    #pledge_invert = invert_dict_new(pledge_histogram)
+    #print_hist_newest(pledge_invert)
+    invert_dict_new({'a':5,'b':4,'c':5})
 
 if __name__ == '__main__':
     main()
